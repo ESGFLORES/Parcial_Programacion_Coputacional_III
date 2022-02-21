@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Parcial I Programacion</string>
+    <string name="materia">Programacion Computacional III</string>
+    <string name="examen">Primer examen parcial ciclo I -2022</string>
+    <string name="integrantes">Integrantes:</string>
+    <string name="I1">Joan Steven Gómez Contreras</string>
+    <string name="I2">Eduardo Sifredo Garcia Flores</string>
+    <string name="I3">Miguel Enrique Ruiz Gómez</string>
+    <string name="I4">Roberto Francisco Reyes Palomo</string>
+    <string name="I5"> Wilson Adolfo Guitiérrez Jovel</string>
+    <string name="I6">Dina Esperanza Gonzales Reyes </string>
+    <string name="docente">Docente: </string>
+    <string name="pedro">Pedro Antonio Villalta Marinero </string>
+    <string name="bt">VER MENU </string>
+    <string name="menu_titulo">Proyectos realizados:</string>
+    <string name="btmenu"> CONTROLES BASICOS </string>
+    <string name="btmenu2">EJEMPLO DE TABS</string>
+    <string name="btmenu3">EJEMPLO DE SENSORES</string>
+    <string name="btmenu4">REPRODUCTOR MP3</string>
+    <string name="btmenu5">ACERCA DE LA APP</string>
+    <string name="encabezado">Haga click para visualizar </string>
+
+    // CONTROLES BASICOS
+    <string name="tituloEnviardatos">Determinar si eres mayor de edad</string>
+    <string name="escribaNombre">Escriba su Nombre </string>
+    <string name="digiteEdad">Escriba su edad</string>
+    <string name="btVerificar">VERIFICAR</string>
+    <string name="btRegreso">REGRESAR AL MENU</string>
+
+    //Verificando edad
+    <string name="tvTituloverificar">Edad verificada</string>
+    <string name="btvolverV">VOLVER</string>
+
+
+</resources>
