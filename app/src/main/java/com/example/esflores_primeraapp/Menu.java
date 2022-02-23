@@ -26,6 +26,16 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        Button ace = (Button) findViewById(R.id.bSensores);
+
+        ace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent j = new Intent (Menu.this,EjemploAcelerometro.class);
+                startActivity(j);
+            }
+        });
 
 
 

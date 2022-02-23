@@ -31,5 +31,11 @@
     <string name="tvTituloverificar">Edad verificada</string>
     <string name="btvolverV">VOLVER</string>
 
+    //Acelerómetro
+    <string name="tvTitulo">SENSOR DE ACELERÓMETRO</string>
+    <string name="btMenu">VOLVER AL MENÚ</string>
+    <string name="btSigue">SIGUIENTE PÁGINA</string>
 
+    //Proximidad
+    <string name="Anterior">PÁGINA ANTERIOR</string>
 </resources>
