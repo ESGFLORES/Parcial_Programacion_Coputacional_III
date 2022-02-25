@@ -1,17 +1,18 @@
 package com.example.esflores_primeraapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class VerificarEdad extends AppCompatActivity {
 
     Integer estado;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,14 +32,11 @@ public class VerificarEdad extends AppCompatActivity {
         }else{
             Estado.setText("Eres mayor de edad");
         }
-        bVolver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent vuelva = new
-                        Intent(VerificarEdad.this,EnviarDatos.class);
-                startActivity(vuelva);
-            }
-        });
+        bVolver.setOnClickListener( view -> {
+            Intent vuelva = new
+                    Intent(VerificarEdad.this,EnviarDatos.class);
+            startActivity(vuelva);
+        } );
 
 
     }

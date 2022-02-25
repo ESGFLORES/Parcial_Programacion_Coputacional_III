@@ -1,6 +1,5 @@
 package com.example.esflores_primeraapp;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.hardware.Sensor;
@@ -9,9 +8,10 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 public class EjemploAcelerometro extends AppCompatActivity {
 
     SensorManager sensorManager;
@@ -25,30 +25,23 @@ public class EjemploAcelerometro extends AppCompatActivity {
         setContentView(R.layout.activity_ejemplo_acelerometro);
         Button btMen = (Button)findViewById(R.id.bMenu);
 
-        btMen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent men = new Intent(EjemploAcelerometro.this,Menu.class);
-                startActivity(men);
-
-            }
-        });
+        btMen.setOnClickListener( view -> {
+            Intent men = new Intent(EjemploAcelerometro.this,Menu.class);
+            startActivity(men);
+        } );
         Button bSi = (Button)findViewById(R.id.bSigue);
 
-        bSi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent si = new Intent(EjemploAcelerometro.this,EjemploProximidad.class);
-                startActivity(si);
-
-            }
-        });
+        bSi.setOnClickListener( view -> {
+            Intent si = new Intent(EjemploAcelerometro.this,EjemploProximidad.class);
+            startActivity(si);
+        } );
 
         sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         final TextView sonido = (TextView)findViewById(R.id.tvSonido);
         if(sensor == null) finish();
         sensorEventListener = new SensorEventListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onSensorChanged(SensorEvent sensorEvent) {
                 float x = sensorEvent.values[0];
@@ -68,7 +61,6 @@ public class EjemploAcelerometro extends AppCompatActivity {
                     sound();
                     sonido.setText("Sonido "+whip);
                 }
-
             }
             @Override
             public void onAccuracyChanged(Sensor sensor, int i) {
