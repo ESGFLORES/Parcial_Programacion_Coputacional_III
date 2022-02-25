@@ -37,5 +37,6 @@
     <string name="btSigue">SIGUIENTE PÁGINA</string>
 
     //Proximidad
+    <string name="ti">SENSOR DE PROXIMIDAD</string>
     <string name="Anterior">PÁGINA ANTERIOR</string>
 </resources>
