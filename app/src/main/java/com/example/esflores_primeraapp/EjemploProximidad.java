@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class EjemploProximidad extends AppCompatActivity {
 
-
     SensorManager sensorManager;
 
     Sensor sensor;
@@ -52,17 +51,14 @@ public class EjemploProximidad extends AppCompatActivity {
                 }else{
                     getWindow().getDecorView().setBackgroundColor(Color.GREEN);
                     texto.setText("SENSOR DE PROXIMIDAD");
-
                 }
             }
             @Override
             public void onAccuracyChanged(Sensor sensor, int i) {
             }
         };
-
         start();
     }
-
     public void start(){
         sensorManager.registerListener(sensorEventListener,sensor,2000*1000);
     }

@@ -74,7 +74,6 @@ public class EjemploAcelerometro extends AppCompatActivity {
         mediaPlayer.start();
 
     }
-
     private void star(){
 
         sensorManager.registerListener(sensorEventListener,sensor,SensorManager.SENSOR_DELAY_NORMAL);
@@ -82,7 +81,6 @@ public class EjemploAcelerometro extends AppCompatActivity {
     private void stop(){
         sensorManager.unregisterListener(sensorEventListener);
     }
-
     @Override
     protected void onPause() {
         stop();

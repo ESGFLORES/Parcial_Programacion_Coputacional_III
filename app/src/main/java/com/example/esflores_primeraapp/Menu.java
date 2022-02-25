@@ -13,7 +13,6 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-
         Button ControlesBasicos = (Button) findViewById(R.id.btControlesBasicos);
 
         ControlesBasicos.setOnClickListener( view -> {
@@ -29,8 +28,5 @@ public class Menu extends AppCompatActivity {
             Intent j = new Intent (Menu.this,EjemploAcelerometro.class);
             startActivity(j);
         } );
-
-
-
     }
 }

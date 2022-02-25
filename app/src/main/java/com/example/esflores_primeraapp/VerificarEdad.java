@@ -37,7 +37,5 @@ public class VerificarEdad extends AppCompatActivity {
                     Intent(VerificarEdad.this,EnviarDatos.class);
             startActivity(vuelva);
         } );
-
-
     }
 }

@@ -8,13 +8,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-
     Button siguiente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         siguiente = (Button)findViewById(R.id.btSiguiente);
 
@@ -23,5 +21,5 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent (MainActivity.this,Menu.class);
             startActivity(i);
         } );
-
-}}
+    }
+}

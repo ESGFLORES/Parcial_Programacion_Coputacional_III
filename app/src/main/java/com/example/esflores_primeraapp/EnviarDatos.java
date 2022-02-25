@@ -8,7 +8,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class EnviarDatos extends AppCompatActivity {
-    // declaracion de la variable para controlar el evento del boton
+
     Button siguiente;
     @Override
 
@@ -31,14 +31,10 @@ public class EnviarDatos extends AppCompatActivity {
             startActivity(siga);
         } );
 
-        // Aqui se regresa a la activity anterior
 siguiente=(Button)findViewById(R.id.btRegreso1);
         siguiente.setOnClickListener( view -> {
             Intent siguiente = new Intent(EnviarDatos.this,Menu.class);
             startActivity(siguiente);
         } );
-
     }
-
-
 }
